@@ -1,0 +1,24 @@
+:root{
+ --blue: rgb(38, 70, 83);
+ --turchese: rgb(42, 157, 143);
+}
+
+.bgrblue{
+    background-color: var(--blue) ;
+}
+
+.bgrturc{
+    background-color: var(--turchese);
+}
+
+.text-blue{
+    color: var(--blue);
+}
+
+.text-turc{
+    color: var(--turchese);
+}
+
+h1, h2 , h3 , .h1 ,.h2 {
+    font-family: 'Nova Square', cursive;
+}
