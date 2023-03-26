@@ -1,6 +1,7 @@
 :root{
  --blue: rgb(38, 70, 83);
  --turchese: rgb(42, 157, 143);
+ --verde: rgb(31, 167, 115);;
 }
 
 .bgrblue{
@@ -9,6 +10,10 @@
 
 .bgrturc{
     background-color: var(--turchese);
+}
+
+.bgrverde{
+    background-color: var(--verde);
 }
 
 .text-blue{
@@ -21,4 +26,217 @@
 
 h1, h2 , h3 , .h1 ,.h2 {
     font-family: 'Nova Square', cursive;
+}
+
+body{
+    background-color: var(--blue);
+    color: var(--turchese);
+}
+
+/* navbar */
+
+.navbar{
+    transition: 0.5s;
+}
+
+.logo{
+    width: 50px;
+}
+
+.nav-link{
+    color: var(--turchese);
+    font-weight:bold;
+}
+
+.nav-link:hover{
+    color: whitesmoke !important;
+    text-shadow: 2px 2px 5px var(--blue);
+}
+
+.logo2{
+    width: 50px;
+    transition: 0.5s;
+}
+
+
+/* header */
+
+.bgrland{
+    height: 80vh;
+    background-image: url(./media/turquoise-wallpaper.jpg);
+    background-size: cover;
+}
+
+/* bottoni */
+
+.btn-custom{
+    color: var(--turchese);
+    background-color: var(--blue);
+    border: 2px solid var(--verde);
+    border-radius: 50px;
+    padding: 20px 60px;
+    transition: 0.5s;
+}
+
+.btn-custom:hover{
+    color: var(--blue);
+    background-color: var(--turchese);
+    transform: scale(1.1);
+}
+/* carte-articoli */
+
+
+.bordsez{
+    height: 300px;
+    border: 2px solid var(--turchese);
+    transition: 0.5s;
+}
+
+.bordsez:hover{
+    background-color: var(--verde);
+   color: var(--blue);
+   transform: scale(1.1);
+}
+
+/* numeri incrementali */
+
+.number{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* swiper js */
+
+.swiper {
+    height: 600px;
+  }
+
+.card-review{
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--verde);
+    border-radius: 20px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* pagina annunci */
+
+.accordion-item , .accordion-button{
+    background-color: var(--verde);
+    color: var(--blue);
+};
+
+.accordion-button:not(.collapsed){
+    background-color: var(--turchese);
+    color: var(--blue);
+    box-shadow: none;
+}
+
+/* carte */
+
+.card-custom{
+    width: 30%;
+    border: 2px solid var(--verde);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom:20px ;
+}
+
+.img-cust{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* chi siamo */
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--turchese);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cust-vh{
+    height: 75vh;
+}
+
+.opener{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.moved{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--verde);
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    background-position: center;
+    background-size:100%;
+    cursor: pointer;
+}
+
+/* flip-card */
+
+.flip-card{
+    height: 400px;
+    width: 250px;
+}
+
+.flip-card:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+.inner{
+    border: 2px solid var(--verde);
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.inner-face{
+    height: 400px;
+    width: 250px;
+    background-image: url(./media/Matteo.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.inner-back{
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
 }
